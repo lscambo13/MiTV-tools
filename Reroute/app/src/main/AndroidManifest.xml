@@ -18,7 +18,8 @@
         android:label="Reroute Audio"
         android:supportsRtl="true"
         android:theme="@style/Theme.Settings.Transparent"
-        tools:ignore="AllowBackup,MissingTvBanner">
+        tools:ignore="AllowBackup"
+        android:banner="@mipmap/ic_banner">
         <activity android:name="com.lscambo13.reroute.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

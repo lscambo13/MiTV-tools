@@ -2,16 +2,16 @@ package com.lscambo13.reroute
 
 import android.content.Context
 import android.media.AudioManager
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         val am: AudioManager = getSystemService(Context.AUDIO_SERVICE) as AudioManager
-        println("Status on start: "+am.isSpeakerphoneOn.toString())
+        println("Status on start: " + am.isSpeakerphoneOn.toString())
         when (am.isSpeakerphoneOn) {
             true -> {
                 am.isSpeakerphoneOn = false
@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Speaker On", Toast.LENGTH_SHORT).show()
             }
         }
-        println("Status on exit: "+am.isSpeakerphoneOn.toString())
-        finish()
+        println("Status on exit: " + am.isSpeakerphoneOn.toString())
+        onBackPressed()
     }
 }
