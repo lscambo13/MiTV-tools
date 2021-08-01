@@ -1,2 +1,2 @@
-rootProject.name = "Settings"
+rootProject.name = "Pair"
 include ':app'
