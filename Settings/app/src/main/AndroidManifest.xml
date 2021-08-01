@@ -13,7 +13,8 @@
     <application
         android:supportsRtl="true"
         android:theme="@style/Theme.Settings.Transparent"
-        tools:ignore="AllowBackup,MissingTvBanner">
+        tools:ignore="AllowBackup"
+        android:banner="@mipmap/ic_banner">
         <activity
             android:enabled="true"
             android:icon="@mipmap/ic_launcher"

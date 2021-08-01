@@ -11,6 +11,9 @@ class SettingsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        val settings = Intent("android.settings.SETTINGS")
+        startActivity(settings)
+        finish()
 
 
 //        val intent = Intent(Intent.ACTION_MAIN)
@@ -18,11 +21,7 @@ class SettingsActivity : AppCompatActivity() {
 //        startActivity(intent)
 //        finish()
 
-        //val intent = Intent(Intent.ACTION_MAIN)
-        val settings = Intent("android.settings.SETTINGS")
-        startActivity(settings)
-        finish()
-
+    //      val intent = Intent(Intent.ACTION_MAIN)
 
 //        val intent = Intent(Intent.ACTION_MAIN)
 //        val pictureComponent = intent.setComponent(
